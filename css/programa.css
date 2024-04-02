@@ -1,0 +1,103 @@
+/* Estilos para el encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Cambiamos el color de fondo */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-links li a.current-page {
+    color: #007bff; /* Cambia el color del enlace a azul */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Añadimos estilos para los cuadros en la parte izquierda */
+.header-left-box {
+    display: flex;
+}
+
+.header-left-box .box {
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.header-left-box .box:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para los programas */
+.programa {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .programa img {
+    width: 15%; 
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .programa h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .programa p {
+    margin-bottom: 10px;
+  }
+  
+  .programa .btn-ver-mas {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .programa .btn-ver-mas:hover {
+    background-color: #0056b3;
+  }

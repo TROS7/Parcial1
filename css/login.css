@@ -1,0 +1,165 @@
+/* Añadimos estilos para el encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Cambiamos el color de fondo */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-links li a.current-page {
+    color: #007bff; /* Cambia el color del enlace a azul */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #003f80;
+}
+
+/* Añadimos estilos para los cuadros en la parte izquierda */
+.header-left-box {
+    display: flex;
+}
+
+.header-left-box .box {
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.header-left-box .box:last-child {
+    margin-right: 0;
+}
+
+/* Estilos para el formulario de registro */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#registrarBtn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#registrarBtn:hover {
+    background-color: #45a049;
+}
+
+#cancelarBtn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#cancelarBtn:hover {
+    background-color: #da190b;
+}
+
+/* Alineación para los elementos de género y actividades favoritas */
+.form-group.radio-group,
+.form-group.checkbox-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-group.radio-group label,
+.form-group.checkbox-group label {
+    margin-right: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/login.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" > Noticia</a></li>
+          <li><a href="programa.html">Programas</a></li>
+          <li><a href="cursos.html" >Cursos</a></li>
+          <li><a href="login.html" class="current-page">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      <div class="container">
+        <h2>Ingrese los datos para registrarse</h2>
+        <form id="registroForm">
+          <div class="form-group">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required pattern="[0-9]{10}">
+          </div>
+          <div class="form-group">
+            <label for="estrato">Estrato:</label>
+            <input type="number" id="estrato" name="estrato" min="1" max="6" required>
+          </div>
+          <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+          </div>
+          <div class="form-group">
+            <label for="grupoSanguineo">Grupo Sanguíneo:</label>
+            <select id="grupoSanguineo" name="grupoSanguineo" required>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+          </div>
+          <div class="form-group">
+            <label for="actividadesFavoritas">Actividades Favoritas:</label><br>
+            <input type="checkbox" id="natacion" name="actividadesFavoritas" value="natacion">
+            <label for="natacion">Natación</label><br>
+            <input type="checkbox" id="futbol" name="actividadesFavoritas" value="futbol">
+            <label for="futbol">Fútbol</label><br>
+            <input type="checkbox" id="basquetball" name="actividadesFavoritas" value="basquetball">
+            <label for="basquetball">Basquetball</label><br>
+            <input type="checkbox" id="voley" name="actividadesFavoritas" value="voley">
+            <label for="voley">Voley</label><br>
+          </div>
+          <button type="submit" id="registrarBtn">Registrar</button>
+          <button type="button" id="cancelarBtn">Cancelar</button>
+        </form>
+      </div>
+    </body>
+    </html>

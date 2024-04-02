@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/cursos.css">
+  <script src="js/cursos.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" > Noticia</a></li>
+          <li><a href="programa.html">Programas</a></li>
+          <li><a href="cursos.html" class="current-page">Cursos</a></li>
+          <li><a href="login.html">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="container">
+    <h1>Cursos</h1>
+    <p>Diligencia el usuario y contraseña para ingresar a un programa.</p>
+    <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="clave" placeholder="Contraseña">
+        <select id="programa" required>
+            <option value="" disabled selected>Selecciona un programa</option>
+            <option value="Programa de educacion fisica">Programa de educacion fisica</option>
+            <option value="Programa educacion basica">Programa educacion basica</option>
+            <option value="Licenciatura en matematicas">Licenciatura en matematicas</option>
+            <option value="Licenciatura fisica">Licenciatura fisica</option>
+            <option value="Programa de economia">Programa de economia</option>
+        </select>
+        <button type="submit" id="loginBtn">Log In</button>
+        <button id="signupBtn">Sign Up</button>
+        <button id="cancelBtn">Cancelar</button>
+    </form>
+</div>
+
+</body>
+</html>
